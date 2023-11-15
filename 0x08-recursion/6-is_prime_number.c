@@ -25,7 +25,7 @@ int fun(int y, int x)
  *
  * Return: 1 for success 0 for fail
  */
-int is_prime_number (int n)
+int is_prime_number(int n)
 {
 	return (fun(n, 2));
 }
