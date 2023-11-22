@@ -32,16 +32,16 @@ char *str_concat(char *s1, char *s2)
 	int i, j;
 	char *new;
 
-	if (s1 == 0)
+	if (s1 == 0 && s2 == 0)
 	{
 		return (0);
 	}
-
-	if (s2 == 0)
-	{
-		return (0);
-	}
-	
+/**
+*	if (s2 == 0)
+*	{
+*		return (0);
+*	}
+*/	
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	new = malloc((len1 + len2 + 1) * sizeof(char));
