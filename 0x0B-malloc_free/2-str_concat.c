@@ -31,6 +31,7 @@ char *str_concat(char *s1, char *s2)
 	int len2;
 	int i, j;
 	char *new;
+	char *nul = "";
 
 	if (s1 == NULL)
 	{
