@@ -8,14 +8,13 @@
  */
 int _strlen(char *str)
 {
-	int len;
+	int len, length = 0;
 
-	len = 0;
-	while (str[len] != '\0')
+	for (len = 0; str[len] != '\0'; len++)
 	{
-		len++;
+		length++;
 	}
-	return (len);
+		return (length);
 }
 /**
  * string_nconcat - concats twoo string until n
@@ -59,6 +58,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			new[len1 + j] = s2[j];
 		}
 	}
+	else
 	{
 		for (j = 0; j <= len2; j++)
 		{
@@ -66,5 +66,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 	}
 		new[len1 + n] = '\0';
-		return (new);
-}
+		return (new); }
