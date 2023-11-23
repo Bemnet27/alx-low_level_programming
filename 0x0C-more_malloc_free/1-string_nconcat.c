@@ -31,14 +31,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len1;
 	unsigned int i;
 	unsigned int len2, j;
+	char *nul = "";
 
 	if (s1 == 0)
 	{
-		return (NULL);
+		s1 = nul;
 	}
 	if (s2 == 0)
 	{
-		return (NULL);
+		s2 = nul;
 	}
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
