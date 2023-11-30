@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 			default:
 				checker = 0;
 				break;	}
-		if (format[i + 1] && checker)
+		if (checker && format[i + 1])
 		{	printf(", ");	}
 		i++;	}
 	printf("\n");	}
