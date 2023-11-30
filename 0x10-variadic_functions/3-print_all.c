@@ -35,7 +35,7 @@ if (format)
 				str = va_arg(args, char*);
 
 				if (str == NULL)
-				{	printf("(nil)");	}
+				{	str = "(nil)";	}
 				printf("%s%s", space, str);
 						break;
 			default:
